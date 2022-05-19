@@ -1,0 +1,124 @@
+
+:root {
+    --vermelho:#e50914;
+    --preto: #141414;
+}
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+        color: var(--vermelho);
+        font-family: arial black Times;
+        font-size: 40px;
+        margin-left: 5px;
+    }
+    
+header nav a{
+    text-decoration: none;
+    color: rgb(248, 242, 242);
+    margin-right: 40px;
+   }
+
+   header nav a:hover{
+    color: rgb(231, 9, 9);
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('./img/surf.jpg');
+   
+    height:800px;
+    background-size:cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 80px;
+    border: 25px;
+    padding: 10px;;
+    background-color: rgba(49, 54, 54, 0.514);
+    width: 540px;
+}
+.filme-principal .sinopse{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filme-principal .titulo{
+    margin-top: 30%;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .botao{
+    background-color: rgb(175, 6, 6);
+    border:none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrousel-filme{
+    margin-top: 5px ;
+}
+
+
+
+
